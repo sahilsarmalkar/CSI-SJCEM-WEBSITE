@@ -28,6 +28,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
   background-color: #1e003e;
+  position: relative;
 }
 
 
@@ -628,7 +629,7 @@ footer {
   }
   .page3 .cont2{
     
-    margin-left:75px;
+    margin-left:70px;
     display: flex;
     justify-content: center;
     align-items: center;
