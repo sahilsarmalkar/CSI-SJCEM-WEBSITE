@@ -28,6 +28,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
   background-color: #1e003e;
+  position: relative;
 }
 
 
@@ -440,7 +441,6 @@ header ul li a:hover {
 }
 
 .dropdown-content {
-  border-radius: 20px;
   background-color: #fc2c9a;
   color: black;
   padding: 20px;
@@ -591,12 +591,8 @@ footer {
 }
 
 /* Responsive Design for Smaller Screens */
-@media screen and (max-width: 600px) {
-  body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
+@media screen and (max-width: 768px) {
+  
   .hackathon-name {
     font-size: 15vw;
   }
@@ -624,7 +620,7 @@ footer {
     font-size: 6vw;
   }
   #initial-page button{
-    margin-top: 4px;
+    margin-top: 25px;
     transform: translate(50%,50%); 
     left: 137px;
 
@@ -708,7 +704,7 @@ footer {
   width: 25%;
   height: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .image1, .image2, .image3, .image4 {
       width: 40%;
   }
@@ -724,7 +720,7 @@ footer {
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
   .image1, .image2{
     height: 180px;
     width: 150px;
