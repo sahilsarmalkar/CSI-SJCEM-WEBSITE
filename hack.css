@@ -359,7 +359,7 @@ header ul li a:hover {
   justify-content: space-evenly;
   flex-direction: column;
   padding: 20px;
-  align-items: start;
+  align-items: center;
 }
 .cont-img {
   height: 500px;
@@ -626,8 +626,12 @@ footer {
 
   }
   .page3 .cont2{
-    text-align: center; 
+    
     margin-left:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .page3 .cont2 img{
     opacity: 0.5;
