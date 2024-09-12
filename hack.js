@@ -110,3 +110,33 @@ function page3VideoAnimation() {
 }
 
 page3VideoAnimation();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.dropdown-btn');
+
+    dropdowns.forEach(button => {
+        button.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+
+            // Toggle dropdown content visibility
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+            // Close other dropdowns if they are open
+            dropdowns.forEach(otherButton => {
+                if (otherButton !== this && otherButton.nextElementSibling.style.display === "block") {
+                    otherButton.nextElementSibling.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
+let more=document.querySelector(".btn-view")
+
+more.addEventListener("onclick",()=>{
+   "PROBLEM_STATEMENTS[1].pdf"
+})

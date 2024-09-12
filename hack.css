@@ -27,6 +27,7 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
+  background-color: #1e003e;
 }
 
 
@@ -349,6 +350,10 @@ header ul li a:hover {
    /* background-size: cover; */
 }
 
+.page3 h1,p,span{
+  z-index: 2;
+}
+
 .cont2 {
   display: flex;
   justify-content: space-evenly;
@@ -393,7 +398,8 @@ header ul li a:hover {
   font-size: 20px;
 }
 .details p {
-  margin: 5px 0;
+  /* margin: 5px 0; */
+  text-align: left;
 }
 .icon {
   color: #00ffff;
@@ -405,6 +411,42 @@ header ul li a:hover {
   margin-top: 50px;
 }
 
+/* dropdown */
+.dropdown {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 380px;
+  width: 50%;
+}
+
+.dropdown-btn {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000000;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  background-color: #fc2c9a;
+  color: black;
+  padding: 20px;
+  display: none;
+  overflow: hidden;
+  border-left: 5px solid #333;
+}
 .button {
   background-color: whitesmoke; /* Pink button color */
   color: black;
@@ -433,12 +475,31 @@ header ul li a:hover {
 
 .page4 {
   width: 100%;
-  height: 120%;
+  height: 100%;
   background-color: #1e003e;
+  
   /* background-image: url('https://img.freepik.com/free-vector/pink-neon-background_53876-91656.jpg');
   background-size: cover; */
 }
 
+.page4 .btn-view button {
+  margin-left: 230px;
+  border-radius: 15px;
+  height: 50px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.page4 .btn-view button a{
+  color: #000000;
+}
 .ps-1 {
   margin-top: 100px;
   text-align: center;
@@ -448,10 +509,12 @@ header ul li a:hover {
 
 .prize-cont {
   /* margin-top: 20px; */
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   margin-top: 50px;
+  background-color: #1e003e;
 }
 .card {
   position: relative;
@@ -468,6 +531,9 @@ header ul li a:hover {
   cursor: pointer;
 }
 
+.card .card2{
+  margin-top: -20px;
+}
 .card::before,
 .card::after {
   position: absolute;
@@ -551,9 +617,142 @@ footer {
   .fix-btn {
     font-size: 6vw;
   }
+  #initial-page button{
+    margin-top: 4px;
+    transform: translate(50%,50%); 
+    left: 137px;
+
+  }
+  .page3 .cont2{
+    text-align: center; 
+    margin-left:25px;
+  }
+  .page3 .cont2 img{
+    opacity: 0.5;
+    height: 150px;
+    width: 230px;
+    left:0px;
+    
+  }
+
+  .page4  h1{
+    /* margin-top: 300px; */
+  }
+
+  .prize-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page4 .btn-view button{
+    margin-left: 60px;
+    border-radius: 15px;
+    height: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .dropdown {
+   width: 80%;
+    margin-left: 50px;
+  }
 }
 
 
+
+.cont .page1 h1,h2,p,span{
+  text-align: center;
+  z-index: 1;
+  font-weight: 700;
+}
+/* img */
+.responsive-image {
+  position: absolute;
+  max-width: 100%;
+  height: 20%;
+}
+.image1 {
+  top: 10%;
+  left: 0%;
+  width: 20%;
+  height: auto;
+}
+.image2 {
+  top: 10%;
+  right: 0%;
+  width: 20%;
+  height: auto;
+}
+.image3 {
+  bottom: 10%;
+  left: 5%;
+  width: 25%;
+  height: auto;
+}
+.image4 {
+  bottom: 10%;
+  right: 5%;
+  width: 25%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .image1, .image2, .image3, .image4 {
+      width: 40%;
+  }
+  .image1, .image2 {
+      top: 5%;
+      width: 40%;
+      opacity: 0.5;
+  }
+  .image3, .image4 {
+      bottom: 5%;
+      width: 40%;
+      opacity: 0.5;
+  }
+}
+
+@media (max-width: 700px){
+  .image1, .image2{
+    height: 180px;
+    width: 150px;
+    left:0px;
+  }
+  .image3{
+    height: 200px;
+    width: 170px;
+}
+.image4{
+  width:200px ;
+}
+}
+/* @media (max-width: 768px) {
+  .image1,.image2, .image3, .image4 {
+    height: 180px;
+    width: 70px;
+    left:0px;
+  }
+ 
+}
+@media (max-width: 480px) {
+  .image1, .image2, .image3, .image4 {
+      width: 70%;
+  }
+  .image1, .image2 {
+      top: 2%;
+      width: 70%;
+  }
+  .image3, .image4 {
+      bottom: 2%;
+      width: 70%;
+  }
+} */
 
 
 
