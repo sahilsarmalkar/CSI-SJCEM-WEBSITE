@@ -28,7 +28,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
   background-color: #1e003e;
-  position:fixed;
+
 }
 
 
@@ -593,6 +593,9 @@ footer {
 
 /* Responsive Design for Smaller Screens */
 @media(max-width: 768px) {
+  body{
+    position:relative;
+  }
   
   .hackathon-name {
     font-size: 15vw;
@@ -629,7 +632,7 @@ footer {
   }
   .page3 .cont2{
     
-    margin-left:70px;
+    margin-left:50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -725,7 +728,7 @@ footer {
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
   .image1, .image2{
     height: 180px;
     width: 150px;
