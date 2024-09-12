@@ -441,6 +441,7 @@ header ul li a:hover {
 }
 
 .dropdown-content {
+  border-radius: 20px;
   background-color: #fc2c9a;
   color: black;
   padding: 20px;
@@ -591,7 +592,7 @@ footer {
 }
 
 /* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
   
   .hackathon-name {
     font-size: 15vw;
@@ -627,7 +628,7 @@ footer {
   }
   .page3 .cont2{
     text-align: center; 
-    margin-left:25px;
+    margin-left:50px;
   }
   .page3 .cont2 img{
     opacity: 0.5;
@@ -637,18 +638,17 @@ footer {
     
   }
 
-  .page4  h1{
-    /* margin-top: 300px; */
-  }
-
   .prize-cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .page4 h1{
+    margin-right: 10px;
+  }
   .page4 .btn-view button{
-    margin-left: 60px;
+    margin-left: 50px;
     border-radius: 15px;
     height: 50px;
     width: 60%;
@@ -663,7 +663,7 @@ footer {
   }
   .dropdown {
    width: 80%;
-    margin-left: 50px;
+   margin-left: 40px;
   }
 }
 
