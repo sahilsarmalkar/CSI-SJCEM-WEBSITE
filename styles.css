@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: fixed;
     /* background-color: #0e0f17; */
     color: #fff;
     font-family: "Chakra Petch";
@@ -1060,6 +1060,11 @@ footer p {
 /* responsive */
 /* home about */
 @media(max-width: 1535px){
+    body{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
     header{
         padding: 15px 3%;
         transition: 2s;
@@ -1154,6 +1159,11 @@ footer p {
 }
 
 @media(max-width: 680px){
+    body{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
     .hero-img img{
         width: 100%;
         height: auto;
