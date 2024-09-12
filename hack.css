@@ -28,7 +28,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
   background-color: #1e003e;
-  position: relative;
+  position:fixed;
 }
 
 
